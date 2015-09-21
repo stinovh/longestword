@@ -1,0 +1,10 @@
+<h1>It's game time!</h1>
+<p><%= @grid %></p>
+<br>
+<form action="/score">
+  Your attempt:<br>
+  <input type="text" name="attempt">
+  <input type="hidden" value="<%= @grid %>" name="grid">
+  <input type="hidden" value="<%= @start_time %>" name="start_time">
+  <button type="submit">Give it your best shot!</button>
+</form>
